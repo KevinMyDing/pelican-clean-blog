@@ -41,7 +41,7 @@
             {% elif article.summary %}
                 {{ article.summary|striptags|truncate(140) }}
             {% endif %}
-            <h4><a href="{{ article.url }}">Read more</a></h4>
+            <h4><a href="{{ SITEURL }}/{{ article.url }}">Read more</a></h4>
             <p class="post-meta">Posted on {{ article.locale_date }}
             </p>
         </div>
