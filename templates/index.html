@@ -1,5 +1,12 @@
 {% extends "base.html" %}
 
+{% block head %}
+  {{ super() }}
+  {% for tag in INDEX_TAGS %}
+    <meta name="tags" content="{{ tag }}">
+  {% endfor %}
+{% endblock %}
+
 {% block header %}
     <!-- Page Header -->
     <!-- Set your background image for this header on the line below. -->
