@@ -136,6 +136,9 @@
             <p>tags: {% for tag in article.tags %}<a href="{{ SITEURL }}/{{ tag.url }}">{{ tag | escape }}</a>, {% endfor %}</p>
         </div>
     {% endif %}
+        <p>If you find this blog post interesting please share:</p>
+        <div class="addthis_sharing_toolbox"></div>
+        <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-57a7802d9a259bbe"></script>
 
     {% if DISQUS_SITENAME and article.status != "draft" %}
         <div class="comments">
